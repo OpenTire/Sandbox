@@ -1,0 +1,11 @@
+@echo off
+rem for Intel Fortran 2016 and ADAMS 2017.2
+
+call "c:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2016.4.246\windows\bin\ifortvars" intel64
+
+dir /b *.f > build.lst
+
+call \msc.software\adams\2017_2\common\mdi cr-us n @build.lst HTire501_2013_for_Adams2017_2.dll
+
+del build.lst
+copy HTire501_2013_for_Adams2017_2.dll "C:\MSC.Software\Adams\2017_2\win64\HTire501_2013.dll"

@@ -1,0 +1,65 @@
+$---------------------------------------------------------------------MDI_HEADER
+[MDI_HEADER]
+ FILE_TYPE     =  'tir'
+ FILE_VERSION  =  2.0
+ FILE_FORMAT   =  'ASCII'
+(COMMENTS)
+{comment_string}
+'Tyre      - XXXXXX'
+'Pressure  - XXXXXX'
+'Test Date - XXXXXX'
+'Test tire'
+'New File Format v2.1'
+$--------------------------------------------------------------------------units
+[UNITS]
+ LENGTH              = 'mm'
+ FORCE               = 'newton'
+ ANGLE               = 'radians'
+ MASS                = 'kg'
+ TIME                = 'sec'
+$--------------------------------------------------------------------------model
+[MODEL]
+$ 	use mode 	1	2
+$ 	-------------------------------------------- 
+$ 	smoothing		X
+$
+ PROPERTY_FILE_FORMAT    = 'USER'
+ FUNCTION_NAME           = 'HTire501_2013::TYR501'
+ USE_MODE                = 2.0
+$----------------------------------------------------------------------dimension
+[DIMENSION]
+ UNLOADED_RADIUS         = 310
+ WIDTH                   = 180.0
+$
+$ $-------------------------------------------------------------shape
+$ [SHAPE]
+$ {radial width}
+$ 1             0.0
+$ 0.998312833   0.2
+$ 0.993234135   0.4
+$ 0.984711434   0.6
+$ 0.972654199   0.8
+$ 0.956928837   1.0
+$ 0.680645161   0.711280855
+$ 0.680645161   0.0
+$----------------------------------------------------------------------parameter
+[PARAMETER]
+ VERTICAL_STIFFNESS      = 230.0
+ VERTICAL_DAMPING	 = 2.0
+ ROLLING_RESISTANCE 	 = 0.055
+ CMX                     = 2.20
+ CGAMMA			 = 1.40
+ UMIN 		 	 = 1.30
+ UMAX  			 = 1.50
+ RELAXATION_LENGTH  	 = 0.0
+ ALPHA_CRITICAL		 = 9.0
+ CURVATURE_FACTOR_ANGLE  = 1.85
+ SCALE_FACTOR_LATERAL  	 = 1.10
+ RATED_LOAD	 	 = 1000
+ SCALE_FACTOR_DIM	 = -1.5E-4
+ SLIP_RATIO_CRITICAL 	 = 20.0
+ CURVATURE_FACTOR_RATIO  = 5.5
+ PNEUM_TRAILING_SCALING  = 1.25
+ PNEUMATIC_LEAD_CAMBER 	 = 25.0
+ LIMIT_CAMBER_ONSET_FRIC = 0.30
+$
