@@ -1,0 +1,24 @@
+//
+// Academic License - for use in teaching, academic research, and meeting
+// course requirements at degree granting institutions only.  Not for
+// government, commercial, or other organizational use.
+// File: Solver.h
+//
+// MATLAB Coder version            : 5.0
+// C/C++ source code generated on  : 09-Jun-2020 11:15:56
+//
+#ifndef SOLVER_H
+#define SOLVER_H
+
+// Include Files
+#include <cstddef>
+#include <cstdlib>
+#include "rtwtypes.h"
+#include "mfeval_wrapper_types.h"
+#endif
+
+//
+// File trailer for Solver.h
+//
+// [EOF]
+//
